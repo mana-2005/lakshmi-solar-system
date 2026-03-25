@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 90 5% 97%;
+    --foreground: 120 15% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 120 15% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 120 15% 10%;
+    --primary: 135 60% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 85% 60%;
+    --secondary-foreground: 30 40% 15%;
+    --muted: 90 10% 94%;
+    --muted-foreground: 120 8% 45%;
+    --accent: 42 85% 60%;
+    --accent-foreground: 30 40% 15%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 120 10% 88%;
+    --input: 120 10% 88%;
+    --ring: 135 60% 30%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Noto Sans Devanagari", "Plus Jakarta Sans", sans-serif;
+    background-color: #f7f7f4;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
